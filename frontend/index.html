@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookingz | Premium Slot Management</title>
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <div class="main-wrapper">
+        <header class="app-header">
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <h1>Bookingz</h1>
+            </div>
+            <p class="subtitle">Effortless scheduling for everyone.</p>
+        </header>
+
+        <main class="container">
+            <!-- Admin Section -->
+            <section id="manage-slots" class="glass-card premium-shadow">
+                <div class="section-header">
+                    <h2><span class="icon">⚙️</span> Manage Slots</h2>
+                    <span class="badge admin-badge">Admin</span>
+                </div>
+                <div id="manage-form" class="input-group">
+                    <input type="text" id="new-slot-time" placeholder="e.g., 3:00 PM - 4:00 PM" autocomplete="off">
+                    <button onclick="createSlot()" class="btn btn-primary">
+                        <span class="btn-icon">+</span> Add Slot
+                    </button>
+                </div>
+                <div id="all-slots-list" class="grid-layout"></div>
+            </section>
+
+            <div class="two-col-grid">
+                <!-- User Section -->
+                <section id="slots" class="glass-card premium-shadow">
+                    <div class="section-header">
+                        <h2><span class="icon">📅</span> Available Slots</h2>
+                    </div>
+                    <div id="slots-list" class="grid-layout vertical-grid"></div>
+                </section>
+
+                <!-- Bookings Overview -->
+                <section id="bookings" class="glass-card premium-shadow">
+                    <div class="section-header">
+                        <h2><span class="icon">✓</span> Confirmed Bookings</h2>
+                    </div>
+                    <div id="bookings-list" class="grid-layout vertical-grid"></div>
+                </section>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Bookingz Platform. Beautifully designed.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
