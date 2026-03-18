@@ -1,21 +1,21 @@
 /* --- CSS Variables & Tokens --- */
 :root {
-    --primary: #6366f1;
-    --primary-hover: #4f46e5;
+    --primary: #8b5cf6;
+    --primary-hover: #7c3aed;
     --secondary: #ec4899;
     --success: #10b981;
-    --success-light: rgba(16, 185, 129, 0.1);
+    --success-light: rgba(16, 185, 129, 0.15);
     --danger: #ef4444;
-    --danger-light: rgba(239, 68, 68, 0.1);
+    --danger-light: rgba(239, 68, 68, 0.15);
     --warning: #f59e0b;
     --dark: #0f172a;
     --text-main: #f8fafc;
-    --text-muted: #94a3b8;
-    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #312e81 100%);
-    --card-bg: rgba(30, 41, 59, 0.6);
-    --card-border: rgba(255, 255, 255, 0.1);
-    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    --input-bg: rgba(15, 23, 42, 0.6);
+    --text-muted: #cbd5e1;
+    --bg-gradient: radial-gradient(circle at top left, #1e1b4b 0%, #0f172a 40%, #020617 100%);
+    --card-bg: rgba(30, 41, 59, 0.4);
+    --card-border: rgba(139, 92, 246, 0.3);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+    --input-bg: rgba(15, 23, 42, 0.7);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
